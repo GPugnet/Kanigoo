@@ -2,14 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <DockerTargetOS>Linux</DockerTargetOS>
-    <UserSecretsId>8931d6f9-16b9-49ab-ba83-4f2cd42604e9</UserSecretsId>
     <RootNamespace>Gpusoft.Kanigoo.Server</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.1916590" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kanigoo.Entities\Kanigoo.Entities.csproj" />
   </ItemGroup>
 
 </Project>
