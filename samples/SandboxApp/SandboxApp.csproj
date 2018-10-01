@@ -14,8 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kanigoo.UpdateSource.Http\Kanigoo.UpdateSource.Http.csproj" />
-    <ProjectReference Include="..\Kanigoo\Kanigoo.csproj" />
+    <ProjectReference Include="..\..\src\Kanigoo.Entities\Kanigoo.Entities.csproj" />
+    <ProjectReference Include="..\..\src\Kanigoo.UpdateSource.Http\Kanigoo.UpdateSource.Http.csproj" />
+    <ProjectReference Include="..\..\src\Kanigoo\Kanigoo.csproj" />
   </ItemGroup>
 
 </Project>
