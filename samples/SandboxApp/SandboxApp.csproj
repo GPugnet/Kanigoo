@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="7.5.0.6605">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kanigoo.UpdateSource.Http\Kanigoo.UpdateSource.Http.csproj" />
+    <ProjectReference Include="..\Kanigoo\Kanigoo.csproj" />
+  </ItemGroup>
+
+</Project>
